@@ -1,0 +1,85 @@
+@import "./normalize.css"
+@import "./skeleton"
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700")
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400")
+
+primary-color = #e74c3c
+secondary-color = #e9e9e7
+
+body
+  background primary-color
+  color #535353
+  font-weight 400
+  font-family "Open Sans", Helvetica, Arial, sans-serif
+
+.hero-wrap
+  border-bottom 1px solid #555
+  background secondary-color
+
+.hero
+  background-image url('../img/headless.png')
+  background-repeat no-repeat
+  background-size 400px
+  height 340px
+  padding 8rem 0
+  background-position 10px -320px
+  @media (min-width: 500px)
+    background-position 100% -320px
+  @media (min-width: 900px)
+    background-position 100% 0
+  h1
+    font-size 2.5rem
+    opacity 0.5
+    font-weight 300
+    margin-top 20rem
+    @media (min-width: 500px)
+      margin-top 0
+  h2
+    font-size 3.4rem
+    font-weight 700
+    font-family 'Montserrat'
+    margin 1rem 0 1rem
+    text-transform uppercase
+    text-shadow 0 -1px 0 rgba(0,0,0,0.2)
+    max-width 240px
+    line-height 1.1
+    span
+      color primary-color
+    @media (min-width: 500px)
+      margin 16rem 0 1rem
+      font-size 5.4rem
+      max-width 400px
+      
+  p
+    font-size 1.4rem
+  
+footer
+  padding 3rem 0
+  color #fff
+  font-size 1.8rem
+  .contact
+    @extends .u-pull-right
+    .button
+      color secondary-color
+      border-color secondary-color
+      margin 0
+      border-radius 80px
+      &:hover
+        background #fff
+        color primary-color
+        border-color #fff
+  .social
+    @extends .u-pull-left
+    list-style none
+    li
+      display inline
+      margin-right 2rem
+      position relative
+      top 0.6rem
+  a
+    color secondary-color
+    &:hover
+      color #fff
+  .fa
+    font-size 2.5rem
