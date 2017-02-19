@@ -4,7 +4,7 @@
   box-sizing border-box
 
 html
-  font-size 1em
+  font-size 1.25em
   height 100%
   @media (min-width: 500px)
     font-size 1.5em
@@ -18,8 +18,6 @@ body
   line-height 1.45
   color #333
   padding 5%
-  min-height 100%
-  // border 2px solid
   min-height 100%
   position relative
 
@@ -45,19 +43,25 @@ h4
   font-size 1.618em
 
 small, .font_small
-  font-size 0.618em
+  font-size 0.7em
+
+.font_mono
+  font-family monospace
+  background aliceblue
+  padding 0 0.3em
+  font-weight bold
 
 a:link, a:visited, a:active
   text-decoration none
-  color deeppink
+  color blue
   display inline-block
   position relative
   border-bottom 2px solid transparent
   i
     font-size 0.8em
     position absolute
-    right -0.9em
-    top -0.9em
+    right -1em
+    top -1em
     display none
     padding 0.5em
     background yellow
@@ -67,7 +71,14 @@ a:hover
   i
     display block
 
+section {
+  max-width 680px
+  margin auto
+}
+
 .hero
+  a
+    font-weight 700
   h1
     font-size 2em
     // color blue
@@ -76,18 +87,19 @@ a:hover
 
 .avatar
   border-radius 100%
-  border 0.2em solid
+  border 0.1em solid
   width 120px
   margin-bottom 3em
   margin-right 3em
   @media (min-width: 800px)
-    width 300px
+    width 180px
 
 
 .social
   list-style none
-  margin 0
+  margin 0 0 2em
   padding 0
   li
-    margin-right 0.5em
-    display inline
+    width 32%
+    margin-bottom 0.5em
+    display inline-block
