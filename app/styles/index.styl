@@ -1,4 +1,6 @@
 @import "./normalize.css"
+base-color = white
+font-color = #4a4a4a
 
 *
   box-sizing border-box
@@ -12,11 +14,11 @@ html
     font-size 2em
 
 body
-  background-color #3F51B5
+  background-color base-color
   font-family "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
   font-weight 400
   line-height 1.45
-  color #fff
+  color #4a4a4a
   padding 5% 5% 0
   min-height 100%
   position relative
@@ -48,15 +50,16 @@ small, .font_small
 
 .font_mono
   font-family monospace
-  background white
+  background font-color
   padding 0 0.3em
-  color #3F51B5
+  color base-color
 
 a:link, a:visited, a:active
   text-decoration none
-  color #FFEB3B
+  color blue
   display inline-block
   position relative
+  border-bottom 0.15em dashed transparent
   i
     font-size 0.7em
     position absolute
@@ -64,15 +67,15 @@ a:link, a:visited, a:active
     top -1.1em
     display none
     padding 0.5em
-    background #FF5722
+    background red
     border-radius 10%
-    color #3F51B5
-    box-shadow 3px -3px 0 #BF360C
+    color base-color
+    box-shadow 3px -3px 0 darken(red, 20%)
     z-index -1
-a:hover
-  text-decoration underline
-  i
-    display block
+  &:hover
+    border-bottom-color lighten(blue, 25%)
+    i
+      display block
 
 section {
   max-width 760px
@@ -85,6 +88,10 @@ section {
     font-weight bold
   h2
     font-size 1.6em
+  // a
+  //   border-bottom 5px solid transparent
+  //   &:hover
+  //     border-bottom-color blue
 
 .avatar
   border-radius 100%
