@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Justin Seiter | Nashville, TN</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name="description" content="I design and build web apps. Nashville, TN">
-        <script src="./index.js"></script>
+
     </head>
     <body>
         <div id="app">
             <div class="container">
-                <header>
-                    <img src="./img/justinseiter.jpg" />
+                <header class="header">
+                    <div class="header__pre">
+                        <div class="header__col">
+                            <img src="./img/justinseiter.jpg" alt="Justin Seiter" />
+                        </div>
+                        <div class="header__col">
+                            <ul class="header__menu">
+                                <li><a href="https://github.com/justinseiter">github</a></li>
+                                <li><a href="https://dribbble.com/justinseiter">dribbble</a></li>
+                                <li><a href="https://twitter.com/justinseiter">twitter</a></li>
+                                <li><a href="https://www.linkedin.com/in/justinseiter/">linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <h1>Justin Seiter</h1>
                     <h2>let&rsquor;s make some <strong>fun</strong> on the web</h2>
                 </header>
@@ -20,7 +32,7 @@
                     <h3>Projects</h3>
                     <section class="project">
                         <div class="project__image">
-                            <img src="img/shades.svg" />
+                            <img src="img/shades.svg" alt="Sunglasses" />
                         </div>
                         <div class="project__details">
                             <h4><a href="https://nowyou.cool">NowYou.Cool</a></h4>
@@ -34,7 +46,7 @@
                     </section>
                     <section class="project">
                         <div class="project__image">
-                            <img src="img/dad.svg" />
+                            <img src="img/dad.svg" alt="Dad illustration" />
                         </div>
                         <div class="project__details">
                             <h4><a href="http://dad.wtf">Dad.wtf</a></h4>
@@ -48,11 +60,11 @@
                     </section>
                     <section class="project">
                         <div class="project__image">
-                            <img src="img/lasso.svg" />
+                            <img src="img/lasso.svg" alt="Lasso" />
                         </div>
                         <div class="project__details">
                             <h4><a href="http://link.rodeo">Link.rodeo</a></h4>
-                            <img class="project__wip" src="img/wip.png" />
+                            <img class="project__wip" src="img/wip.png" alt="Work In Progress" />
                             <p>
                                 Bookmarking utility - A Chrome extension that lassos all the open tabs in a window, saves them to localStorage, then closes the window.
                             </p>
@@ -69,5 +81,6 @@
                 </div>
             </footer>
         </div>
+        <script src="./index.js" async></script>
     </body>
 </html>
