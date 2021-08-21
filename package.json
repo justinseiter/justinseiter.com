@@ -12,7 +12,8 @@
     "build-prod": "parcel build src/index.html"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "pattern.css": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
