@@ -50,7 +50,7 @@ a {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 660px;
     margin: auto;
     padding: 0 5%;
 }
@@ -92,7 +92,6 @@ a {
     &__col {
         display: flex;
         flex-direction: column;
-        flex-basis: 100%;
         flex: 1;
     }
 
@@ -135,7 +134,6 @@ main {
     &__details {
         display: flex;
         flex-direction: column;
-        flex-basis: 100%;
         flex: 0;
     }
     &__image {
@@ -165,6 +163,7 @@ main {
     }
     p {
         font-family: $sans;
+        font-size: 1.188rem;
     }
     &__wip {
         display: block;
