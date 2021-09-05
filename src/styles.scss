@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
-$bg: #000069;
+$bg: #223f6b;
 $primary-color: #dfdfff;
 $link-color: #f20000;
 $sans: 'PT Sans', sans-serif;
 $serif: 'PT Serif', serif;
 $break: 600px;
 
-html {font-size: 100%; color: darken($bg, 40);} /*16px*/
+html,
+body {
+    font-size: 100%;
+    color: darken($bg, 40);
+    height: 100%;
+    display: grid;
+}
 
 body {
     font-family: $sans;
@@ -52,14 +58,17 @@ a {
     }
 }
 
+#app {
+    margin: auto;
+}
+
 .container {
     max-width: $break;
     margin: auto;
-    padding: 5%;
 }
 
 .header {
-    padding: 2% 0;
+    margin-top: -20vh;
     color: darken($bg, 3);
     text-align: center;
 
