@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
-$bg: #1d365d;
-$primary-color: #dfdfff;
-$link-color: #f20000;
+$bg: #fff;
+$primary-color: #222;
+$link-color: #03a9f4;
 $sans: 'PT Sans', sans-serif;
 $serif: 'PT Serif', serif;
 $break: 600px;
@@ -116,7 +116,6 @@ a {
         font-size: 3.157em;
         margin-bottom: 0.15em;
         color: $primary-color;
-        text-shadow: 0 2px 0 black;
         @media (min-width: $break) {
             font-size: 4.6em;
         }
@@ -127,7 +126,6 @@ a {
         font-size: 1.2em;
         color: $primary-color;
         margin: 0 0 8%;
-        text-shadow: 0 1px 0 black;
 
         @media (min-width: $break) {
             font-size: 1.5em;
