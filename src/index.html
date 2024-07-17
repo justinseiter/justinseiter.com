@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-212597-5"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-212597-5');
-        </script>
         <title>Justin Seiter | Nashville, TN</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <meta name="description" content="I design and build web apps. Nashville, TN">
-
+        <link rel="stylesheet" href="./styles.scss" />
     </head>
     <body>
         <div id="app">
-            <header class="header">
+            <main class="header">
                 <div class="container">
-                    <img src="./img/justinseiter.jpg" alt="Web developer Justin Seiter" />
                     <h1>Justin Seiter</h1>
                     <h2>Web Developer &nbsp;&bull;&nbsp; Nashville, TN</h2>
-
+            
                     <div class="header__pre">
                         <div class="header__menu">
                             <span><a href="https://github.com/justinseiter">Github</a></span>
@@ -32,49 +22,8 @@
                             <span><a href="https://www.linkedin.com/in/justinseiter/">LinkedIn</a></span>
                         </div>
                     </div>
-
-                </div>
-            </header>
-            <main>
-                <div class="container">
-<!--                    <h3>Projects</h3>-->
-                    <section class="project">
-                        <div class="project__image">
-                            <img src="img/shades.svg" alt="Sunglasses" />
-                        </div>
-                        <div class="project__details">
-                            <h4><a href="https://makeme.cool">MakeMe.Cool</a></h4>
-                            <p>
-                                You probably don’t know it but your Twitter profile is pretty sad. So I decided to help out and make you cool.
-                            </p>
-                            <p>
-                                You tell me your Twitter user name and I make you cool, end of story.
-                            </p>
-                        </div>
-                    </section>
-                    <section class="project">
-                        <div class="project__image">
-                            <img src="img/lasso.svg" alt="Lasso" />
-                        </div>
-                        <div class="project__details">
-                            <h4><a href="http://link.rodeo">Link.rodeo</a></h4>
-                            <b>🚧&nbsp;WIP: Bookmarking utility</b>
-                            <p>
-                                 Save all of your open browser tabs in the click of a button. Link.Rodeo is a Chrome extension that lassos all the open tabs in a window, saves them, and closes the window.
-                            </p>
-                            <p>
-                                Grab the tabs by the horns!
-                            </p>
-                        </div>
-                    </section>
                 </div>
             </main>
         </div>
-        <footer class="footer">
-            <div class="footer__container">
-                &copy; <span id="copy-date"></span>
-            </div>
-        </footer>
-        <script src="./index.js" async></script>
     </body>
 </html>
